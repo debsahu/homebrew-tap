@@ -5,8 +5,7 @@ cask "ferric" do
   sha256 arm:   "63ccbe0b37cc4e32b9bf5f239894909e7d041b310cb0745dbc0a4ac50055e2d1",
          intel: "1327ef5b0390a2574cbf1bb66b37fbeef44680649aa8a37a46b22fd6dc754921"
 
-  url "https://github.com/debsahu/ferric/releases/download/v#{version}/ferric-v#{version}-macos-#{arch}.dmg",
-      verified: "github.com/debsahu/ferric/"
+  url "https://github.com/debsahu/ferric/releases/download/v#{version}/ferric-v#{version}-macos-#{arch}.dmg"
   name "FERRIC"
   desc "Open-source Rust + WebGPU NMR resonance assignment, dynamics & chemometrics workbench"
   homepage "https://debsahu.github.io/ferric/"
@@ -16,7 +15,7 @@ cask "ferric" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "FERRIC.app"
   binary "#{appdir}/FERRIC.app/Contents/MacOS/ferric"
