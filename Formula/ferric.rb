@@ -1,25 +1,25 @@
 class Ferric < Formula
   desc "Open-source Rust + WebGPU NMR resonance assignment, dynamics & chemometrics CLI"
   homepage "https://debsahu.github.io/ferric/"
-  version "0.17.2"
+  version "0.17.3"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/debsahu/ferric/releases/download/v#{version}/ferric-v#{version}-macos-arm64.tar.gz"
-      sha256 "9cc733f9e0a55e697538efc8976bfcc0826ce2f84e72ac764971a3c800a22c7d"
+      sha256 "27ef1ebc534d89d7c943d6e7ce2bd09ec3fa7a552a92e5f1c88452f2b27f302e"
     end
 
     on_intel do
       url "https://github.com/debsahu/ferric/releases/download/v#{version}/ferric-v#{version}-macos-x86_64.tar.gz"
-      sha256 "27f7d8bee51d810b6df8c9ad95067f728616fc84f62d30bba4973ee56ec309af"
+      sha256 "8fab043b6c37e37b06cda5317f22c48e0c013cd39f904c71656b82a0879da87b"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/debsahu/ferric/releases/download/v#{version}/ferric-v#{version}-linux-x86_64.tar.gz"
-      sha256 "eda1c5321f0edc0ac2b1f9dc171e4fc094b6ba82c1a49515e14d600b2078cd88"
+      sha256 "6549854fc1aea9d6e96145fa76f354c2838755f5312eccf521c58436ee0b72c9"
     end
   end
 
