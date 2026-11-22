@@ -1,9 +1,9 @@
 cask "ferric" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.17.3"
-  sha256 arm:   "338535e64a2e5bc2abf7725873217699ee6116489898e13a8019c0195f1f4c23",
-         intel: "a0028bb017bc629ce9ecd095d5fc795cf3384645e82684091e114f6f20aab9a0"
+  version "0.18.0"
+  sha256 arm:   "ad9cc759a4a0aa6718a7db992c17e42d72240e5707ca2f491ec0a3668d767aca",
+         intel: "47183cf0a320ca42abe319d09e41968f5391a6e3629f884872e2cfc464be4254"
 
   url "https://github.com/debsahu/ferric/releases/download/v#{version}/ferric-v#{version}-macos-#{arch}.dmg"
   name "FERRIC"
